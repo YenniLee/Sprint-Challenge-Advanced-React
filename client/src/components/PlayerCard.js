@@ -5,7 +5,7 @@ function PlayerCard({ player }) {
         <div className='player-card'>
             <h3>{player.name}</h3>
             <p>{player.country}</p>
-            <p>Searches: {player.searches}</p>
+            <p>Google Searches: {player.searches}</p>
         </div>
     )
 }
