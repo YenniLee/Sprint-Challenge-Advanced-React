@@ -1,8 +1,35 @@
 .App {
   text-align: center;
+
 }
 
-.dark-mode{
+.dark-mode {
   color: #00B2EE;
   background: #24292E;
+}
+
+.player-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.player-card {
+  border: 1px solid black;
+  background: #7F00FF;
+  color: #FAFAFA;
+  border-radius: 15px;
+  font-weight: bold;
+  width: 25%;
+  margin: 1% auto;
+}
+
+button {
+  border-radius: 10px;
+  padding: 5px 10px;
+  background: black;
+  font-weight: bold; 
+  color: #FAFAFA;
+  position: relative;
+  float: right;
 }

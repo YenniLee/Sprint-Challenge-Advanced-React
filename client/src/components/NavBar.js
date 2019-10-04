@@ -11,10 +11,11 @@ function NavBar() {
 
     return (
         <nav>
-            <h2>Women's World Cup Players 2019</h2>
             <div className='dark-mode_toggle'>
                 <button onClick={toggleMode} className={darkMode ? 'toggle toggled' : 'toggle'}>Dark Mode</button>
             </div>
+            <h2>Women's World Cup Players 2019</h2>
+            
         </nav>
     )
 }
