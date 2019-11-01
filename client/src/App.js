@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import axios from 'axios';
+import PlayersList from './components/PlayersList';
 
 class App extends React.Component {
   state = {
@@ -22,6 +23,7 @@ class App extends React.Component {
     return (
       <div className='App'>
         <h1>Soccer Players</h1>
+        <PlayersList playerData={this.state.playerData}/>
       </div>
     )
   }
