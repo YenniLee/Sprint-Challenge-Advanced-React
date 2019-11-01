@@ -3,7 +3,7 @@ import './App.css';
 import axios from 'axios';
 import PlayersList from './components/PlayersList';
 import NavBar from './components/NavBar';
-
+import Chart from './components/Chart';
 
 class App extends React.Component {
   state = {
@@ -25,6 +25,7 @@ class App extends React.Component {
     return (
       <div className='App'>
         <NavBar />
+        <Chart />
         <PlayersList playerData={this.state.playerData}/>
       </div>
     )
