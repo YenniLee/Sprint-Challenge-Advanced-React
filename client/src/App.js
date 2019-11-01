@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import axios from 'axios';
 import PlayersList from './components/PlayersList';
+import NavBar from './components/NavBar';
+
 
 class App extends React.Component {
   state = {
@@ -22,7 +24,7 @@ class App extends React.Component {
   render(){
     return (
       <div className='App'>
-        <h1>Soccer Players</h1>
+        <NavBar />
         <PlayersList playerData={this.state.playerData}/>
       </div>
     )
