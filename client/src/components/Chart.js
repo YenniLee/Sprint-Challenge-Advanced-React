@@ -26,13 +26,14 @@ const Chart = () => {
     ]
     
     return (
-        <BarChart width={600} height={300} data={data} margin={{top: 5, right: 30, left: 20, bottom: 5}}>
-            <CartesianGrid strokeDasharray="3 3" />
+        <BarChart width={1000} height={500} data={data} margin={{top: 5, right: 30, left: 20, bottom: 5}}>
+            <CartesianGrid strokeDasharray="4 4" />
             <XAxis dataKey="name" />
             <YAxis />
             <Tooltip />
             <Legend />
             <Bar dataKey="searches" fill="dodgerblue" />
+            <Bar dataKey="country" fill="dodgerblue" />
         </BarChart>
     )
 };
